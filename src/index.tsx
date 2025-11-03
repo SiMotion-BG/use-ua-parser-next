@@ -9,7 +9,7 @@ type IUseUAReturn = Omit<UAParser.IResult, 'ua'>;
 const uaParser = new UAParser.UAParser();
 
 function getDefaultString() {
-  return typeof "window" !== "undefined" ? window.navigator.userAgent : ""
+  return typeof window !== "undefined" ? window.navigator.userAgent : ""
 }
 
 function useUA(uastring?: string) {
