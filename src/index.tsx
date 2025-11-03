@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from 'react';
 import * as UAParser from 'ua-parser-js';
 import { isMobile, isTouchDevice } from './helpers';
